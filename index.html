@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Saudade da Flavs 💖</title>
+  <title>Saudade da Flavs 😄</title>
   <style>
     body {
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      background: linear-gradient(135deg, #a0eaff, #ffeaa7);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -14,24 +14,25 @@
       margin: 0;
       flex-direction: column;
       text-align: center;
-      color: #fff;
+      color: #333;
     }
 
     h1 {
       font-size: 3em;
       margin-bottom: 0.2em;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      color: #ff6f91;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     }
 
     p {
       font-size: 1.5em;
       margin-bottom: 2em;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
     }
 
     button {
-      background-color: #fff;
-      color: #ff6f91;
+      background-color: #ff6f91;
+      color: #fff;
       border: none;
       border-radius: 20px;
       padding: 15px 30px;
@@ -46,30 +47,31 @@
       box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
     }
 
-    .heart {
-      color: #ff6f91;
+    .emoji {
       font-size: 2em;
-      animation: heartbeat 1s infinite;
+      animation: bounce 1s infinite;
     }
 
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.3); }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
   </style>
 </head>
 <body>
-  <h1>Oi Flavs! 💖</h1>
-  <p>Estou com muita saudade! A gente devia se ver em breve! <span class="heart">❤️</span></p>
+  <h1>Oi Flavs! 😄</h1>
+  <p>Tô com saudade! A gente devia se ver qualquer dia! <span class="emoji">🎉</span></p>
   <button id="agreeButton">Concordo!</button>
 
   <script>
     const button = document.getElementById('agreeButton');
     button.addEventListener('click', () => {
-      alert('Yay! Então bora marcar algo! 😄💖');
+      alert('Yay! Bora marcar um rolê! 😎');
       button.innerText = "Bora marcar!";
       button.disabled = true;
     });
   </script>
 </body>
 </html>
+
+
